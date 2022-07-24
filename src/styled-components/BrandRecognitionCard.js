@@ -25,9 +25,9 @@ export const BrandRecognitionCard = styled.div`
   }
   padding-left: 20px;
 @media only screen and (max-width: 400px) {
-  margin-right:20px;
+  margin-right:30px;
   div{
-  left:7.7rem;
+  left:9rem;
 }
   p{
     font-size:12px;

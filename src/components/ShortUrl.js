@@ -105,8 +105,8 @@ function ShortUrl(props) {
                 padding-left:20px;
                 width:50px;
                 @media only screen and (max-width: 400px) {
-                    border-top:100px solid cyan;
-                    width:5px;
+                    border-top:90px solid cyan;
+                    width:1px;
                     border-bottom:0px
                 
                 }`}></div>
@@ -130,8 +130,9 @@ function ShortUrl(props) {
                 padding-left:20px;
                 width:50px;
 @media only screen and (max-width: 400px) {
-    border-top:100px solid cyan;
-    width:5px;
+    border-top:90px solid cyan;
+    width:1px;
+
     border-bottom:0px
 
 }`}></div>
