@@ -6,11 +6,16 @@ import { FormContainer } from "../styled-components/FormContainer"
 import { PeopleWorking } from '../styled-components/PeopleWorking';
 import PeopleWorkingimg from "../assets/people working.png"
 import { Button } from '../styled-components/Button';
+import userEvent from '@testing-library/user-event';
 function ShortenUrlInput(props) {
     const [inputText, setInputText] = useState("")
     const addInputTo = (e) => {
         e.preventDefault()
-        props.setInputValue(inputText)
+        if (inputText.length > 1) {
+
+            props.setInputValue(inputText)
+        } else {
+        }
         setInputText("")
 
     }
@@ -30,9 +35,9 @@ function ShortenUrlInput(props) {
 
 
 
-                    <input placeholder='Shorten a link here.... ' type="text" value={inputText}
+                    <input required placeholder='Shorten a link here.... ' type="text" value={inputText}
                         onChange={(e) => { setInputText(e.target.value) }} />
-                    <Button >Shorten it!</Button>
+                    <Button  >Shorten it!</Button>
                 </div>
             </FormContainer>
         </>

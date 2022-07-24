@@ -14,7 +14,12 @@ function BoostUrl(props) {
         flex-direction:column;
         `
         } >
-            <h1 className={css`color:white`}>Boost Your Links today</h1>
+            <h1 className={css
+                `color:white ;
+                @media only screen and (max-width: 400px) {
+                    text-align:center;
+                }
+                `}>Boost Your Links today</h1>
             <Button className={css`border-radius:15px;`}>Get Started</Button>
 
         </div>

@@ -3,9 +3,10 @@ export const FormContainer = styled.form`
  display:flex;
  justify-content:center;
  align-items:center;
+ margin:auto;
 
-padding-left:100px;
-padding-right:100px;
+// padding-left:100px;
+// padding-right:100px;
 div
 {   
     height:150px;
@@ -24,5 +25,21 @@ input{
 border:0px solid white;
 
 
+}
+@media only screen and (max-width: 400px) {
+    div{
+        height:300px;
+        // display:flex;
+        flex-direction:column;
+        width:350px;
+    }
+    input{
+        width:250px;
+        padding:0;
+    }
+    input::-moz placeholder{
+        color:red;
+    }
+    
 }
 `

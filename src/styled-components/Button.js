@@ -10,7 +10,11 @@ border-radius:5px;
 font-size:15px;
 pointer:cursor;
 &:hover{
-    background-color:#7DF9FF;
+    background-color:#7DF9FF;                    
     pointer:cursor;
 }
+@media only screen and (max-width: 400px) {
+    width:250px;
+}
+
 `
