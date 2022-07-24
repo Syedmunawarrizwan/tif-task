@@ -11,7 +11,7 @@ background-color: #232127;
           font-size: 14px;
           &:hover {
             color: cyan;
-            pointer: cursor;
+            cursor: pointer;
           }
         }
 @media only screen and (max-width: 400px) {
@@ -34,5 +34,8 @@ background-color: #232127;
             gap:1rem;
             padding-bottom:50px;
            }
+           svg{:hover{
+            cursor: pointer;
+           }}
 }
     `

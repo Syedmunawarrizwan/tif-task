@@ -49,7 +49,7 @@ function ShortUrlListAndBrandRecognition(props) {
             {shortUrl.map((url_item, id) => (
                 <ListDiv key={id}>
                     <p style={{ color: "black" }}>
-                        <b>{url_item.longurl}</b>
+                        <b>{url_item.longurl.slice(0, 45) + "..."}</b>
                     </p>
                     <hr className={css`visibility:hidden;`} color="grey" height="1px" width="300px" />
                     <span>

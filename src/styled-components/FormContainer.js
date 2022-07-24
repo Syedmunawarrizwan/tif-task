@@ -22,7 +22,10 @@ input{
     width:750px;
     height:45px;
     border-radius:7px;
-border:0px solid white;
+border:0px solid white; ::placeholder{
+    padding-left:20px;
+    color:red;
+}
 
 
 }
@@ -36,10 +39,7 @@ border:0px solid white;
     input{
         width:250px;
         padding:0;
+       
     }
-    input::-moz placeholder{
-        color:red;
-    }
-    
 }
 `

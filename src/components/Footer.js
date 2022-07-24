@@ -20,10 +20,15 @@ function Footer(props) {
         <FooterContainer>
             <LogosDiv>
                 <Shortly fill={isHoverdShortly ? "cyan" : "white"} onMouseLeave={() => { setIsHoveredShortly(false) }} onMouseEnter={() => { setIsHoveredShortly(true) }}
-                    className={css`padding-top:40px;`}></Shortly>
+                    className={css`padding-top:40px; &:hover{
+                        cursor: pointer;
+                    }`}></Shortly>
                 <SocialMediaLogoDiv>
                     <Facebook fill={isHoverdFacebook ? "cyan" : "white"} onMouseLeave={() => { setIsHoveredFacebook(false) }} onMouseEnter={() => { setIsHoveredFacebook(true) }}
-                        className={css`                   
+                        className={css`
+                        &:hover{
+                            cursor: pointer;
+                        }                   
                @media only screen and (max-width: 400px) {
                 display:none;
                 }
@@ -31,6 +36,9 @@ function Footer(props) {
                     />
                     <Twitter fill={isHoverdTwitter ? "cyan" : "white"} onMouseLeave={() => { setIsHoveredTwitter(false) }} onMouseEnter={() => { setIsHoveredTwitter(true) }}
                         className={css`
+                        &:hover{
+                            cursor: pointer;
+                        }
                         @media only screen and (max-width: 400px) {
                             display:none;
                             }
@@ -38,7 +46,9 @@ function Footer(props) {
             `}
                     />
                     <Pinterest fill={isHoverdPinterest ? "cyan" : "white"} onMouseLeave={() => { setIsHoveredPinterest(false) }} onMouseEnter={() => { setIsHoveredPinterest(true) }}
-                        className={css`
+                        className={css`&:hover{
+                            cursor: pointer;
+                        }
                         @media only screen and (max-width: 400px) {
                             display:none;
                             }
@@ -47,6 +57,9 @@ function Footer(props) {
                     />
                     <Instagram fill={isHoverdInstagram ? "cyan" : "white"} onMouseLeave={() => { setIsHoveredInstagram(false) }} onMouseEnter={() => { setIsHoveredInstagram(true) }}
                         className={css`
+                        &:hover{
+                            cursor: pointer;
+                        }
                         @media only screen and (max-width: 400px) {
                             display:none;
                             }
@@ -99,10 +112,18 @@ function Footer(props) {
                 </div>
             </div>
             <span className={css`display:none;`}>
-                <Facebook fill={isHoverdFacebook ? "cyan" : "white"} onMouseLeave={() => { setIsHoveredFacebook(false) }} onMouseEnter={() => { setIsHoveredFacebook(true) }} />
-                <Twitter fill={isHoverdTwitter ? "cyan" : "white"} onMouseLeave={() => { setIsHoveredTwitter(false) }} onMouseEnter={() => { setIsHoveredTwitter(true) }} />
-                <Pinterest fill={isHoverdPinterest ? "cyan" : "white"} onMouseLeave={() => { setIsHoveredPinterest(false) }} onMouseEnter={() => { setIsHoveredPinterest(true) }} />
-                <Instagram fill={isHoverdInstagram ? "cyan" : "white"} onMouseLeave={() => { setIsHoveredInstagram(false) }} onMouseEnter={() => { setIsHoveredInstagram(true) }} />
+                <Facebook className={css`&:hover{
+                            cursor: pointer;
+                        }`} fill={isHoverdFacebook ? "cyan" : "white"} onMouseLeave={() => { setIsHoveredFacebook(false) }} onMouseEnter={() => { setIsHoveredFacebook(true) }} />
+                <Twitter className={css`&:hover{
+                            cursor: pointer;
+                        }`} fill={isHoverdTwitter ? "cyan" : "white"} onMouseLeave={() => { setIsHoveredTwitter(false) }} onMouseEnter={() => { setIsHoveredTwitter(true) }} />
+                <Pinterest className={css`&:hover{
+                            cursor: pointer;
+                        }`} fill={isHoverdPinterest ? "cyan" : "white"} onMouseLeave={() => { setIsHoveredPinterest(false) }} onMouseEnter={() => { setIsHoveredPinterest(true) }} />
+                <Instagram className={css`&:hover{
+                            cursor: pointer;
+                        }`} fill={isHoverdInstagram ? "cyan" : "white"} onMouseLeave={() => { setIsHoveredInstagram(false) }} onMouseEnter={() => { setIsHoveredInstagram(true) }} />
             </span>
         </FooterContainer>
     );

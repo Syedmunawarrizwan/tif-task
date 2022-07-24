@@ -11,7 +11,7 @@ font-size:15px;
 pointer:cursor;
 &:hover{
     background-color:#7DF9FF;                    
-    pointer:cursor;
+    cursor: pointer;
 }
 @media only screen and (max-width: 400px) {
     width:250px;

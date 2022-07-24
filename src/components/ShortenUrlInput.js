@@ -8,7 +8,11 @@ import PeopleWorkingimg from "../assets/people working.png"
 import { Button } from '../styled-components/Button';
 import userEvent from '@testing-library/user-event';
 function ShortenUrlInput(props) {
+
+
+
     const [inputText, setInputText] = useState("")
+    let text = "Shorten a Link Here..."
     const addInputTo = (e) => {
         e.preventDefault()
         if (inputText.length > 1) {
@@ -35,7 +39,7 @@ function ShortenUrlInput(props) {
 
 
 
-                    <input required placeholder='Shorten a link here.... ' type="text" value={inputText}
+                    <input required placeholder="Shorten a Link Here ..." type="text" value={inputText}
                         onChange={(e) => { setInputText(e.target.value) }} />
                     <Button  >Shorten it!</Button>
                 </div>

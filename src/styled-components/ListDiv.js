@@ -16,8 +16,9 @@ width:300px;
 height:240px;
 display:flex;
 flex-direction:column;
-justify-content:space-evenly;
+// justify-content:space-evenly;
 align-items:center;
+padding:20px;
 
 hr{
     visibility:visible;
@@ -31,8 +32,7 @@ button{
     
 }
 span{
-    // background-color:red;
-    // gap:3rem;
+  
      
     flex-direction:column;
    padding-bottom:20px;

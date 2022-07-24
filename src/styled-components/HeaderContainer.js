@@ -7,6 +7,16 @@ align-items:center;
 padding-left:100px;
 padding-top:20px;
 gap:1rem;
+p{
+  color:grey;
+}
+
+p{
+  &:hover{
+    color:black;
+    cursor:pointer;
+  }
+}
 @media only screen and (max-width: 400px) {
     
       width:400px;
