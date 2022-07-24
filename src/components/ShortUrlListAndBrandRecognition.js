@@ -11,7 +11,7 @@ import { ListDiv } from "../styled-components/ListDiv";
 import { BrandRecognitionCard } from "../styled-components/BrandRecognitionCard";
 import { BrandRecognitionContainer } from "../styled-components/BrandRecognitionContainer";
 
-function ShortUrl(props) {
+function ShortUrlListAndBrandRecognition(props) {
     const [shortUrl, setShorturl] = useState([]);
     console.log(shortUrl);
     console.log(props.inputValue);
@@ -156,4 +156,4 @@ function ShortUrl(props) {
     );
 }
 
-export default ShortUrl;
+export default ShortUrlListAndBrandRecognition;
