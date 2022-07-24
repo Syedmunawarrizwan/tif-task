@@ -10,7 +10,7 @@ export const PeopleWorking = styled.div`
     max-width: 1005px;
     text-align: center;
     // padding-left:150px;
-    color: rgba(0, 0, 0, 0.8);
+    color: #232127;
   }
   img {
     width: 350px;

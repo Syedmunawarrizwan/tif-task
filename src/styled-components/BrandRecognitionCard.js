@@ -1,6 +1,6 @@
 import styled from "styled-components";
 export const BrandRecognitionCard = styled.div`
-  width: 350px;
+  // width: 350px;
   background-color: white;
   display: flex;
   position: relative;
@@ -24,4 +24,15 @@ export const BrandRecognitionCard = styled.div`
     border-radius: 50%;
   }
   padding-left: 20px;
-`;
+@media only screen and (max-width: 400px) {
+  margin-right:20px;
+  div{
+  left:7.7rem;
+}
+  p{
+    font-size:12px;
+  }
+}
+
+  `
+  ;
